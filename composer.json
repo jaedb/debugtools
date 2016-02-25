@@ -1,0 +1,28 @@
+{
+	"name": "jaedb/debugtools",
+    "type": "silverstripe-module",
+	"description": "Debug Tools for SilverStripe",
+	"homepage": "http://jamesbarnsley.co.nz",
+	"keywords": ["silverstripe"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "James Barnsley",
+			"homepage": "http://jamesbarnsley.co.nz",
+			"email": "james@barnsley.nz"
+		}
+	],
+	"support": {
+		"issues": "http://github.com/jaedb/debugtools/issues"
+	},
+	"require": {
+		"silverstripe/cms": "~3.1",
+		"silverstripe/framework": "~3.1"
+	},
+    "extra": {
+        "installer-paths": {
+            "{$name}": ["vendor/package"]
+        }
+    },
+	"minimum-stability": "dev"
+}
