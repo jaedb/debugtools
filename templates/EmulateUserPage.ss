@@ -43,9 +43,7 @@
                         </a>
                     <% end_loop %>
                 <% else %>
-                
-                    No non-administrator users to emulate
-                
+                    <p class="no-results">No non-administrator users to emulate</p>
                 <% end_if %>
 			</div>
 		</div>

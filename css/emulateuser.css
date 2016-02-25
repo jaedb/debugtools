@@ -77,3 +77,10 @@ body {
 .emulate-user .id {			width: 10%; }
 .emulate-user .name {		width: 45%; }
 .emulate-user .email {		width: 45%; }
+
+.emulate-user .no-results {
+	padding: 20px;
+	text-align: center;
+	color: #AAAAAA;
+	font-size: 16px;
+}
