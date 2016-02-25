@@ -4,10 +4,20 @@ Description
 Adds additional functionality to assist in debugging and developing SilverStripe websites.
 
 
-Dependancies
+Dependencies
 ============
 
 * SilverStripe 3.1+
+* Betterbuttons
+
+
+Features
+============
+
+* Performance of page loads
+* Visualisation of current site state (DEV/TEST/LIVE)
+* Admins can emulate any other user
+
 
 Installation
 ============
