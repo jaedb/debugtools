@@ -1,17 +1,21 @@
 <div id="page-info">
     
-    <% if CanEmulateUser %>
-        <a class="debug-item" href="/home/emulateuser"><strong>Emulate user</strong></a>
-    <% end_if %>
+    <div class="debug-item">
+        Debug tools
+    </div>
     
-    <span class="debug-item mode">
+    <div class="debug-item mode">
         <strong>Mode:</strong>
         <span>$Mode</span>
-    </span>
+    </div>
     
-    <span class="debug-item">
+    <div class="debug-item">
         <strong>Load time:</strong>
         <span>{$TimeToLoad}s</span>
-    </span>
+    </div>
+    
+    <% if CanEmulateUser %>
+        <a class="debug-item emulateuser" href="/home/emulateuser"><strong>Emulate user</strong></a>
+    <% end_if %>
     
 </div>

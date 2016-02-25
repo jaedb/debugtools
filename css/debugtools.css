@@ -9,19 +9,28 @@
 	z-index: 999;
 	bottom: 0;
 	right: 0;
-	padding: 10px 15px;
-	background: #e31818;
+	padding: 0 5px;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-family: Arial, Helvetica, sans-serif;
 }
  
-#page-info > .debug-item:not(:first-child) {
+#page-info > .debug-item {
 	display: inline-block;
-	padding-left: 10px;
+	padding: 10px 15px;
+	background: #e31818;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-right: -3px;
 }
  
-#page-info a {
-	color: #FFFFFF;
+#page-info > .debug-item:first-child {
+	background: #d30f0f;
+	color: #ea9494;
+	text-transform: uppercase;
+}
+ 
+#page-info > a.debug-item:hover {
+	background: #d30f0f;
 }
 
