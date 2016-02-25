@@ -28,7 +28,17 @@ class DebugTools_ContentControllerExtension extends Extension {
 		// URL attribute?
 		if( !isset($params['ID']) ){
 			Requirements::css( DEBUGTOOLS_DIR .'/css/emulateuser.css');
-			return $this->owner->customise( array('Users' => Member::get()) )->renderWith('EmulateUserPage');
+			
+			$members = Member::get();
+			$membersList = array();
+			foreach($members as $member) {
+				if( !$member->inGroup("administrators") && $member->ID > 1 ){
+					$membersList[$member->ID] = $member;
+				}
+			}
+			$membersList = ArrayList::create($membersList);
+			
+			return $this->owner->customise( array('Users' => $membersList) )->renderWith('EmulateUserPage');
 		}
 	
 		$member = Member::get()->byID( $params['ID'] );

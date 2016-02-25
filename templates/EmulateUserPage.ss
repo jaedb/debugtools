@@ -33,14 +33,20 @@
 			</div>
 			
 			<div class="users">
-				<% loop Users %>
-					<a href="{$Top.Link}emulateuser/{$ID}" class="user">
-						<div class="id">$ID</div>
-						<div class="name">$Name</div>
-						<div class="email">$Email</div>
-						<br style="clear: both;" />
-					</a>
-				<% end_loop %>
+                <% if Users %>
+                    <% loop Users %>
+                        <a href="{$Top.Link}emulateuser/{$ID}" class="user">
+                            <div class="id">$ID</div>
+                            <div class="name">$Name</div>
+                            <div class="email">$Email</div>
+                            <br style="clear: both;" />
+                        </a>
+                    <% end_loop %>
+                <% else %>
+                
+                    No non-administrator users to emulate
+                
+                <% end_if %>
 			</div>
 		</div>
 		

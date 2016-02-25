@@ -29,6 +29,12 @@
 	color: #ea9494;
 	text-transform: uppercase;
 }
+
+@media( min-width: 500px ){
+	#page-info > .debug-item:first-child {
+		display: none;
+	}
+}
  
 #page-info > a.debug-item:hover {
 	background: #d30f0f;
